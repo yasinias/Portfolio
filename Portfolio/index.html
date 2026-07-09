@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yasinipriya | UI Developer Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio of Yasinipriya, UI Developer specializing in Angular, TypeScript, and modern web applications."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <header class="site-header">
+      <a class="logo" href="#home">YASINIPRIYA</a>
+      <nav class="desktop-nav">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#awards">Awards</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">
+        🌙
+      </button>
+    </header>
+
+    <main>
+      <section id="home" class="hero container">
+        <div class="hero-left">
+          <p class="eyebrow">UI Developer</p>
+          <h1>Hi, I'm <span class="accent">Yasinipriya</span></h1>
+          <p class="typing-line">
+            <span id="typedRole"></span><span class="cursor">|</span>
+          </p>
+          <p class="hero-text">
+            Frontend developer with 5+ years of experience building responsive
+            and scalable web applications with Angular, TypeScript, and modern
+            UI architecture.
+          </p>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="#awards">View Awards</a>
+            <a class="btn btn-secondary" href="./assets/resume.pdf" download
+              >Download Resume</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="container section">
+        <h2>About Me</h2>
+        <p>
+          I build clean, user-focused interfaces and enjoy turning complex
+          product requirements into fast, maintainable applications. My recent
+          work includes integrating REST APIs, improving performance, and
+          collaborating closely with designers and backend teams.
+        </p>
+        <p>Currently based in Coimbatore.</p>
+        <div class="about-stats">
+          <article>
+            <h3>5+</h3>
+            <p>Years Experience</p>
+          </article>
+          <article>
+            <h3>20+</h3>
+            <p>Features Delivered</p>
+          </article>
+          <article>
+            <h3>100%</h3>
+            <p>Responsive Designs</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="skills" class="container section">
+        <div class="section-head">
+          <h2>Skills</h2>
+          <input
+            id="skillSearch"
+            class="search-input"
+            type="text"
+            placeholder="Search skills..."
+            aria-label="Search skills"
+          />
+        </div>
+        <div id="skillsGrid" class="skills-grid">
+          <span class="skill-card">Angular</span>
+          <span class="skill-card">TypeScript</span>
+          <span class="skill-card">JavaScript</span>
+          <span class="skill-card">NGRX</span>
+          <span class="skill-card">RXJS</span>
+          <span class="skill-card">HTML</span>
+          <span class="skill-card">CSS</span>
+          <span class="skill-card">Node.js</span>
+          <span class="skill-card">Express.js</span>
+          <span class="skill-card">Git</span>
+          <span class="skill-card">Contentful</span>
+          <span class="skill-card">Figma</span>
+          <span class="skill-card">Jest</span>
+        </div>
+      </section>
+
+      <section id="experience" class="container section">
+        <h2>Experience</h2>
+        <div class="timeline">
+          <article class="timeline-item">
+            <h3>UI Developer</h3>
+            <p class="meta">Chennai -> Coimbatore | 2021 - Present</p>
+            <ul>
+              <li>
+                Built dynamic and responsive web apps using Angular, TypeScript,
+                and modern UI architecture.
+              </li>
+              <li>
+                Integrated secure REST APIs and improved communication between
+                frontend and backend services.
+              </li>
+              <li>
+                Improved performance through code optimization and reusable
+                component patterns.
+              </li>
+            </ul>
+          </article>
+          <article class="timeline-item">
+            <h3>Web Developer</h3>
+            <p class="meta">Nilaapps | 2021</p>
+            <ul>
+              <li>
+                Built and maintained client-side modules for enterprise web
+                platforms.
+              </li>
+              <li>
+                Collaborated with teams to deliver clean UI and reliable user
+                flows.
+              </li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="awards" class="container section">
+        <div class="awards-head">
+          <div>
+            <p class="awards-kicker">Recognition</p>
+            <h2>Awards</h2>
+            <p class="awards-subtitle">
+              Consistent impact and team contribution recognized across multiple years.
+            </p>
+          </div>
+          <div class="awards-highlight">
+            <span class="highlight-number">8</span>
+            <span class="highlight-label">Awards Received</span>
+          </div>
+        </div>
+        <div class="awards-controls">
+          <label for="awardsYearFilter">Filter by year</label>
+          <select id="awardsYearFilter" class="year-select" aria-label="Filter awards by year">
+            <option value="all">All years</option>
+            <option value="2026">2026</option>
+            <option value="2025">2025</option>
+            <option value="2023">2023</option>
+          </select>
+        </div>
+        <div class="awards-scroll" id="awardsScroll">
+          <article class="award-card award-item" data-year="2026">
+            <p class="award-year-tag">2026</p>
+            <span class="award-icon" aria-hidden="true">⭐</span>
+            <h3>Star of the Month</h3>
+            <p class="award-meta">TCS | 2026</p>
+          </article>
+          <article class="award-card award-item featured-award" data-year="2025">
+            <p class="award-year-tag">2025</p>
+            <span class="award-icon" aria-hidden="true">🥇</span>
+            <h3>Star of the Quarter</h3>
+            <p class="award-meta">TCS | 2025</p>
+          </article>
+          <article class="award-card award-item" data-year="2025">
+            <p class="award-year-tag">2025</p>
+            <span class="award-icon" aria-hidden="true">🥇</span>
+            <h3>Star Team Award</h3>
+            <p class="award-meta">TCS | 2025</p>
+          </article>
+          <article class="award-card award-item" data-year="2025">
+            <p class="award-year-tag">2025</p>
+            <span class="award-icon" aria-hidden="true">🤖</span>
+            <h3>AI Innovator Award</h3>
+            <p class="award-meta">TCS | 2025</p>
+            <p class="award-note">Awarded for applying AI to improve engineering outcomes.</p>
+          </article>
+          <article class="award-card award-item featured-award" data-year="2023">
+            <p class="award-year-tag">2023</p>
+            <span class="award-icon" aria-hidden="true">🏆</span>
+            <h3>Best Team Award</h3>
+            <p class="award-meta">TCS | May 2023</p>
+            <p class="award-note">Recognized for collaborative delivery excellence.</p>
+          </article>
+          <article class="award-card award-item" data-year="2023">
+            <p class="award-year-tag">2023</p>
+            <span class="award-icon" aria-hidden="true">⭐</span>
+            <h3>Elevate Wings Award</h3>
+            <p class="award-meta">TCS | 2023</p>
+          </article>
+          <article class="award-card award-item" data-year="2023">
+            <p class="award-year-tag">2023</p>
+            <span class="award-icon" aria-hidden="true">🥇</span>
+            <h3>Star Team Award</h3>
+            <p class="award-meta">TCS | 2023</p>
+          </article>
+          <article class="award-card award-item" data-year="2023">
+            <p class="award-year-tag">2023</p>
+            <span class="award-icon" aria-hidden="true">⭐</span>
+            <h3>Star of the Month</h3>
+            <p class="award-meta">TCS | 2023</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="certifications" class="container section">
+        <h2>Certifications</h2>
+        <div class="cert-grid">
+          <article class="cert-card">
+            <span class="cert-icon" aria-hidden="true">🤖</span>
+            <h3>GitHub Copilot</h3>
+            <p class="cert-meta">AI-assisted development</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="container section">
+        <h2>Contact</h2>
+        <div class="contact-panel">
+          <p class="contact-intro">
+            Have an opportunity or collaboration in mind? Let’s connect.
+          </p>
+          <div class="contact-details">
+            <a class="contact-item" href="tel:+919092567258" aria-label="Call Yasinipriya">
+              <span class="contact-icon" aria-hidden="true">📞</span>
+              <span class="contact-label">Phone</span>
+              <span class="contact-value">+91 90925 67258</span>
+            </a>
+            <a
+              class="contact-item"
+              href="mailto:er.yasinias@gmail.com"
+              aria-label="Email Yasinipriya"
+            >
+              <span class="contact-icon" aria-hidden="true">✉️</span>
+              <span class="contact-label">Email</span>
+              <span class="contact-value">er.yasinias@gmail.com</span>
+            </a>
+            <div class="contact-item">
+              <span class="contact-icon" aria-hidden="true">📍</span>
+              <span class="contact-label">Location</span>
+              <span class="contact-value">Coimbatore (Previously Chennai)</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <button id="toTopBtn" class="to-top" aria-label="Back to top">↑</button>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> Yasinipriya. All rights reserved.</p>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
